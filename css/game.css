@@ -1,0 +1,577 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  background-color: #0d0e1b;
+}
+li{
+
+}
+a{
+  text-decoration: none;
+}
+section{
+  width: 100%;
+  height: 70vh;
+  background-color:  #07070f;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/Hots.jpg");
+}
+
+
+header{
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  right: 0;
+}
+
+header.black{
+  background: #07070f;
+}
+
+
+
+.head{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.info{
+  display: flex;
+}
+.info p{
+  margin-left: 30px;
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Oswald";
+}
+.welcome{
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Oswald";
+}
+
+hr{
+  background-color: rgba(9,10,20,0);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.head-menu{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+nav ul li {
+  display: inline-block;
+}
+nav li{
+  margin-left: 50px;
+}
+  nav li a{
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Oswald";
+  cursor: pointer;
+}
+nav li a:hover{
+  color: #ff7a21;
+}
+
+.soci ul li{
+  display: inline-block;
+}
+
+.soci li{
+  margin-left: 30px;
+  cursor: pointer;
+  width: 39px;
+  height: 39px;
+  border-radius: 20px;
+  background-color: #000000;
+  border: 1px solid rgba(255,255,255,0.08);
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.soci li i{
+  font-size: 20px;
+  color: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.soci li i:hover{
+  color: #ff7a21;
+}
+.menu-toggle{
+  color: #fff;
+  float: right;
+  font-size: 35px;
+  cursor: pointer;
+  display: none;
+  padding-top: 10px;
+}
+
+.main{
+  max-width: 650px;
+  margin: 0 auto;
+  margin-top: 80px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+}
+
+.main h2{
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #f1f0f0;
+  font-weight: 400;
+  font-family: "DragonFire";
+  text-align: center;
+}
+
+.main  hr{
+  background-color: #ffffff;
+}
+
+.box-info{
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
+
+.box-info h1{
+  font-size: 80px;
+  letter-spacing: 1px;
+  line-height: 90px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Oswald";
+}
+
+@media (max-width:1200px){
+  .menu-toggle{
+    display: block;
+    padding-right: 30px;
+    font-size: 50px;
+  }
+  nav {
+    position: absolute;
+    width: 100%;
+    height: calc( 100vh - 50px);
+    background: #07070f;
+    top: 83px;
+    left: -100%;
+    transition: 0.5s;
+  }
+  nav.active{
+    left: 0;
+  }
+  nav ul{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 0px;
+  }
+  nav ul li{
+    padding-top: 20px;
+    margin: 0px;
+  }
+  .head{
+    display: none;
+  }
+  .menu{
+  display: none;
+  }
+  .soci{
+    display: none;
+  }
+  hr{
+    display: none;
+  }
+  .showing{
+    max-height: 20em;
+  }
+}
+
+
+
+.game-box{
+  width: 100%;
+  height: 170vh;
+  margin-top: 150px;
+  position: relative;
+}
+.top-pattern-layers{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -220px;
+  width: 100%;
+  height: 74px;
+  background: url("../img/pattern-1.png") center bottom repeat-x;
+  z-index: 2;
+}
+
+.game-container{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.game-container p{
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 30px;
+  color: #727489;
+  font-weight: 300;
+  font-family: "Oswald";
+}
+
+.game-container li {
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 30px;
+  color: #727489;
+  font-weight: 300;
+  font-family: "Oswald";
+  padding-top: 10px;
+}
+
+.game-container h2{
+  font-size: 30px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Oswald";
+}
+
+.game-flex{
+  display:flex;
+  justify-content: space-between;
+}
+
+.download-btn{
+  padding-top: 60px;
+}
+
+.download-btn a{
+background-color: #ff7a21;
+font-size: 16px;
+letter-spacing: 1px;
+color: #ffffff;
+font-weight: 700;
+font-family: "Oswald";
+padding: 15px 30px;
+}
+
+.rating{
+  display: flex;
+}
+
+
+.game-item h2{
+  font-size: 30px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Oswald";
+}
+
+.rating p {
+  margin: 0px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  color: #727489;
+  font-weight: 400;
+  font-family: "Oswald";
+}
+
+.img-rating{
+  text-align: center;
+  align-items: center;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.information{
+  display: flex;
+}
+
+.information p{
+  margin-left: 25px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  color: #727489;
+  font-weight: 400;
+  font-family: "Oswald";
+  margin-right: 25px;
+}
+
+.img-information{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.card-flex{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+
+.card-item{
+  display: block;
+  padding: 50px 50px;
+  background: #07070f;
+  margin-left: 20px;
+}
+
+.card-info h3{
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Oswald";
+}
+
+.card-info p {
+  font-size: 13px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  color: #727489;
+  font-weight: 800;
+  font-family: "Oswald";
+}
+
+@media (max-width:1200px){
+  .game-box{
+    height: auto;
+      margin-top: 50px;
+  }
+  .game-flex{
+    flex-wrap: wrap;
+  }
+  .game-container img{
+    max-width: 100%;
+  }
+  .card-flex{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card-item{
+    margin-top: 30px;
+  }
+   h2{
+    text-align: center;
+    align-items: center;
+  }
+  .game-item h2{
+    text-align: left;
+  }
+}
+
+
+footer{
+width: 100%;
+height: 70vh;
+background-color: #07070f;
+position: relative;
+}
+
+.bottom-pattern-layer-3 {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 74px;
+  background: url("../img/pattern-2.png") center top repeat-x;
+  z-index: 2;
+  top: -1%;
+}
+
+.footer-container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-flex{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 120px;
+  flex-wrap: wrap;
+}
+
+.footer-menu {
+  max-width: 370px;
+}
+
+.footer-menu h3{
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Oswald";
+  margin-bottom: 30px;
+}
+
+.footer-address h4{
+  font-size: 15px;
+  letter-spacing: 0px;
+  line-height: 30px;
+  color: #727489;
+  font-weight: 300;
+  font-family: "Oswald";
+  margin: 0px;
+  padding-top: 20px;
+}
+
+.footer-menu p{
+  margin-bottom: 40px;
+  font-size: 15px;
+  letter-spacing: 0px;
+  line-height: 30px;
+  color: #727489;
+  font-weight: 300;
+  font-family: "Oswald";
+}
+
+.btn-mail{
+  position: relative;
+}
+
+input{
+  position: relative;
+    width: 100%;
+    line-height: 30px;
+    padding: 19px 30px;
+    height: 70px;
+    display: inline-block;
+    font-size: 16px;
+    background: #000000;
+    font-weight: 400;
+    color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.10);
+    outline: none;
+}
+
+input:hover{
+border: 1px solid #ff7a21;
+}
+
+button{
+  position: absolute;
+    top: 30px;
+    right: 5px;
+    float: right;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 10px 0px;
+    display: block;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-menu li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  list-style-type: disc;
+  color: #ff7a21;
+  letter-spacing: 0.05em;
+}
+
+.footer-menu li a{
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 36px;
+  color: #727489;
+  font-weight: 400;
+  font-family: "Oswald";
+}
+
+.footer-menu li a:hover{
+  color: #ff7a21;
+}
+
+.footer-address li{
+list-style: none;
+margin-bottom: 10px;
+}
+
+.footer-address li a{
+  font-size: 20px;
+  letter-spacing: 0px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 300;
+  font-family: "Oswald";
+}
+
+
+@media (max-width:1200px) {
+footer{
+  height: auto;
+}
+input{
+  padding: 0px;
+}
+button{
+  display: none;
+}
+.footer-address{
+display: none;
+}
+.footer-menu h3{
+  text-align: center;
+}
+.footer-menu p {
+  padding: 5px 20px;
+  text-align: center;
+}
+}
+
+@media (max-width:360px){
+  input{
+    width: 80%;
+  }
+  .btn-mail{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+@font-face {
+  src: url("../fonts/Oswald-Regular.woff2");
+  font-family: "Oswald";
+}
+@font-face {
+  src: url("../fonts/DragonFire-K7VWA.ttf");
+  font-family: "DragonFire";
+}
